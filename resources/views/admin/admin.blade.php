@@ -15,8 +15,8 @@
             <div class="nav-items">
             <a href="{!! url('/cashier'); !!}" class="nav-item"> User and Activity</a>
             </div>
-            <div class="profile">
-                <img src="" alt="" class="picture">
+            <div class="profile" style="justify-content:center; display:flex; align-items:center; flex-direction:row;"  >
+            <img src="{{ asset('img/profil.jpg') }}" alt="Profil Picture" class="picture" style="padding-right:20px;">
                 <div class="username">Glenlay</div>
             </div>
         </div>
@@ -199,6 +199,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.picture{
+        width: 30px;
+        height:30px;
+    }
 
     .top-row p,
     .bottom-row p {

@@ -13,10 +13,12 @@
 <body>    <div class="container">
         <div class="navbar">
             <div class="nav-items">
-            <a href="{!! url('/cashier'); !!}" class="nav-item"> Produk</a>
+            <a href="{!! url('/manager'); !!}" class="nav-item"> Home</a>
+            <a href="{!! url('/managerlog'); !!}" class="nav-item"> manager log</a>
+            <a href="{!! url('/managerproduk'); !!}" class="nav-item">  Add Produk</a>
             </div>
-            <div class="profile">
-                <img src="" alt="" class="picture">
+            <div class="profile" style="justify-content:center; display:flex; align-items:center; flex-direction:row;"  >
+            <img src="{{ asset('img/profil.jpg') }}" alt="Profil Picture" class="picture" style="padding-right:20px;">
                 <div class="username">Glenlay</div>
             </div>
         </div>
@@ -138,6 +140,10 @@
         width: 100%;
         background-color: #18181B;
         position: fixed;
+    }
+    .picture{
+        width: 30px;
+        height:30px;
     }
     
     table {

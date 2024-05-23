@@ -13,10 +13,12 @@
 <body>    <div class="container">
         <div class="navbar">
             <div class="nav-items">
-            <a href="{!! url('/cashier'); !!}" class="nav-item"> Produk</a>
+            <a href="{!! url('/manager'); !!}" class="nav-item"> home</a>
+            <a href="{!! url('/managerlog'); !!}" class="nav-item"> Manager Log</a>
+            <a href="{!! url('/managertransactions'); !!}" class="nav-item"> Transaksi Log</a>
             </div>
-            <div class="profile">
-                <img src="" alt="" class="picture">
+            <div class="profile" style="justify-content:center; display:flex; align-items:center; flex-direction:row;"  >
+            <img src="{{ asset('img/profil.jpg') }}" alt="Profil Picture" class="picture" style="padding-right:20px;">
                 <div class="username">Glenlay</div>
             </div>
         </div>
@@ -173,6 +175,10 @@
         color: white;
     }
 
+    .picture{
+        width: 30px;
+        height:30px;
+    }
     /* Mengatur border untuk sel yang berisi data */
     td:nth-child(1),
     td:nth-child(2),

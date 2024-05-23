@@ -1,9 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\CashierController;
 
-Route::get('/', function () {
+
+// Rute untuk halaman login, halaman utama, dan halaman lainnya
+
+
+Route::get('/ ', function () {
     return view('login');
 });
 Route::get('/cashier', function () {
@@ -28,3 +35,8 @@ Route::get('/managertransactions', function () {
     return view('manager/managertransactions');
 });
 
+// Route for displaying the login form
+Route::get('/login', [LoginController::class, ])->name('login');
+
+// Route for handling the login form submission
+Route::post('/login', [LoginController::class, 'login']);

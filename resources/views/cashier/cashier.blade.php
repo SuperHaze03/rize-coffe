@@ -219,7 +219,8 @@ $products = [
                 <a href="{!! url('/transactions'); !!}" class="nav-item"> transactions and table</a>
             </div>
             <div class="profile">
-                <img src="" alt="" class="picture">
+            <div class="profile" style="justify-content:center; display:flex; align-items:center; flex-direction:row;"  >
+            <img src="{{ asset('img/profil.jpg') }}" alt="Profil Picture" class="picture" style="padding-right:20px;">
                 <div class="username">Azar</div>
             </div>
         </div>
@@ -430,6 +431,10 @@ $products = [
     username {
         color: #fff;
         font-size: 16px;
+    }
+    .picture{
+        width: 30px;
+        height:30px;
     }
 
     .main {

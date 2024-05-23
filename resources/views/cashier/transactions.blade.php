@@ -16,8 +16,9 @@
             <a href="{!! url('/cashier'); !!}" class="nav-item"> cashier</a>
                 <a href="" class="nav-item">Transactions and table</a>
             </div>
-            <div class="profile">
-                <img src="" alt="" class="picture">
+            
+            <div class="profile" style="justify-content:center; display:flex; align-items:center; flex-direction:row;"  >
+            <img src="{{ asset('img/profil.jpg') }}" alt="Profil Picture" class="picture" style="padding-right:20px;">
                 <div class="username">Glenlay</div>
             </div>
         </div>
@@ -171,7 +172,10 @@
         background-color: #18181B;
         position: fixed;
     }
-    
+    .picture{
+        width: 30px;
+        height:30px;
+    }
     table {
         border-collapse: collapse;
         width: 100%;

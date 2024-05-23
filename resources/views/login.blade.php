@@ -28,18 +28,19 @@
                 <div class="login-title">
                     <h2>Log in</h2>
                 </div>
-                <form action="" class="form">
-                    <label for="username"><span> Email or Phone </span></label>
-                    <input type="text" name="username" id="username">
+                <form method="POST" action="{{ route('login') }}" class="form">
+                    
+                    <label for="username"><span> Username </span></label>
+                    <input type="text" name="username" id="username" required>
 
                     <label for="password"><span> Password </span></label>
+                    <input type="password" name="password" id="password" required>
 
-                    <input type="password" name="username" id="password">
                     <div class="check">
                         <input type="checkbox" id="showPasswordCheckbox">
                         <label for="showPasswordCheckbox">Show Password</label>
                     </div>
-                    <button>Login</button>
+                    <button type="submit">Login</button>
                 </form>
                 <script>
                     const showPasswordCheckbox = document.getElementById('showPasswordCheckbox');
